@@ -6,7 +6,7 @@ import ExclamationMarkCircle from '@strapi/icons/ExclamationMarkCircle';
 import { request, LoadingIndicatorPage } from "@strapi/helper-plugin";
 import get from 'lodash/get';
 import  ContentType  from '../ContentTypes';
-import { useRouteMatch } from "react-router-dom";
+import { useRouteMatch, useHistory } from "react-router-dom";
 
 const contentTypeRoutes = () => {
     return (<ContentType/>)
@@ -17,7 +17,7 @@ const HomePage = () => {
   const [collectionTypesLinks, setCollectionTypesLinks] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const { url } = useRouteMatch();
-
+  const { push, replace } = useHistory();
 
   useEffect(() => {
     request("/content-manager/content-types", { method: "GET" }).then(response => {
@@ -47,6 +47,7 @@ const HomePage = () => {
       setSingleTypesLinks(singleTypesLinks);
       setCollectionTypesLinks(collectionTypesLinks);
       setLoading(false);
+      replace({ pathname: `${url}/collectionType/${collectionTypes[0].uid}?slug=${collectionTypes[0].uid}` });
     });
   }, []);
 
