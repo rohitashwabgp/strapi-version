@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pdps",
+  "info": {
+    "singularName": "pdp",
+    "pluralName": "pdps",
+    "displayName": "PDP",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
+  "attributes": {
+    "items": {
+      "displayName": "Product",
+      "type": "component",
+      "repeatable": true,
+      "component": "items.product"
+    },
+    "name": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "pdp"
+    }
+  }
+}

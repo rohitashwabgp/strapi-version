@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home1s",
+  "info": {
+    "singularName": "home1",
+    "pluralName": "home1s",
+    "displayName": "Home1",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "string"
+    },
+    "version_test_comps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::version-test-comp.version-test-comp",
+      "mappedBy": "home_1"
+    }
+  }
+}

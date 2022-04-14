@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "version_test_comps",
+  "info": {
+    "singularName": "version-test-comp",
+    "pluralName": "version-test-comps",
+    "displayName": "VERSION_TEST_COMP",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "items": {
+      "displayName": "COMP_VERSION_TEST_1",
+      "type": "component",
+      "repeatable": false,
+      "component": "version-test.comp-version-test-1"
+    },
+    "version_test_relations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::version-test-relation.version-test-relation",
+      "inversedBy": "version_test_comps"
+    },
+    "componentId": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "biginteger"
+    },
+    "home_1": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::home1.home1",
+      "inversedBy": "version_test_comps"
+    }
+  }
+}

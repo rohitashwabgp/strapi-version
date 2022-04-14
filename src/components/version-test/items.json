@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_version_test_items",
+  "info": {
+    "displayName": "items",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

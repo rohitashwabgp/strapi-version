@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "version_test_dynamic_zones",
+  "info": {
+    "singularName": "version-test-dynamic-zone",
+    "pluralName": "version-test-dynamic-zones",
+    "displayName": "VERSION_TEST_DYNAMIC_ZONE",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "dynamiczone",
+      "components": [
+        "version-test.items"
+      ]
+    }
+  }
+}

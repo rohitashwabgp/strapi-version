@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "version_test_uids",
+  "info": {
+    "singularName": "version-test-uid",
+    "pluralName": "version-test-uids",
+    "displayName": "VERSION_TEST_UID",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "type": "uid"
+    }
+  }
+}

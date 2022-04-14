@@ -1,0 +1,33 @@
+{
+  "name": "quill_editor",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "quill_editor",
+    "description": "Description of quill_editor plugin",
+    "kind": "plugin"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.1.7",
+    "@strapi/utils": "^4.1.7",
+    "lodash": "^4.17.21",
+    "react-diff-viewer": "^3.1.1",
+    "react-quill": "^1.3.5"
+  },
+  "dependencies": {
+   
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer"
+    }
+  ],
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

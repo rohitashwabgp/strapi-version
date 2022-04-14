@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "version_test_relations",
+  "info": {
+    "singularName": "version-test-relation",
+    "pluralName": "version-test-relations",
+    "displayName": "VERSION_TEST_RELATION",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
+  "attributes": {
+    "version_test_comps": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::version-test-comp.version-test-comp",
+      "mappedBy": "version_test_relations"
+    },
+    "Title": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}

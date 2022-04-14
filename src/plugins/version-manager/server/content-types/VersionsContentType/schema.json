@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "content-type-version",
+  "info": {
+    "singularName": "content-type-version",
+    "pluralName": "content-type-versions",
+    "displayName": "content-type-version"
+  },
+  "options": {
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    },
+    "content-type-builder": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "vuid": {
+      "type": "string"
+    },
+    "dataJson": {
+      "type": "json"
+    },
+    "viewJson": {
+      "type": "json"
+    },
+    "contentType": {
+      "type": "string"
+    },
+    "versionNumber": {
+      "type": "biginteger"
+    },
+    "contentId": {
+      "type": "biginteger"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  }
+}

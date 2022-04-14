@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_version_test_comp_version_test_1s",
+  "info": {
+    "displayName": "COMP_VERSION_TEST_1",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "items": {
+      "type": "string"
+    },
+    "version_test_comps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::version-test-comp.version-test-comp"
+    }
+  }
+}

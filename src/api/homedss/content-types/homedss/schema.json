@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "homedsses",
+  "info": {
+    "singularName": "homedss",
+    "pluralName": "homedsses",
+    "displayName": "Homedss"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "items": {
+      "type": "string"
+    }
+  }
+}
